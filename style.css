@@ -1,0 +1,73 @@
+@import "http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css";
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background-color: #ddd;
+  color: #333;
+  text-align: center;
+  transition: 0.2s ease-in-out;
+}
+body.darkMode {
+  background-color: #333;
+  color: #ddd;
+}
+h1 {
+  margin: 40px;
+}
+p {
+  margin: 10px 0;
+  line-height: 25px;
+  text-align: justify;
+  padding: 40px;
+  max-width: 800px;
+  margin: 20px auto;
+}
+.toggleBtn {
+  position: relative;
+  width: 140px;
+  height: 60px;
+  background: url("sun.jpg") no-repeat center;
+  background-size: cover;
+  border: none;
+  border-radius: 30px;
+  transition: .4s linear;
+  cursor: none;
+}
+.darkMode .toggleBtn {
+  background: url("moon.jpg") no-repeat center;
+  background-size: cover;
+}
+.circle {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, .6);
+  border-radius: 22px;
+  top: 8px;
+  left: 90px;
+  transition: .4s linear;
+}
+.darkMode .circle {
+  position: absolute;
+  top: 8px;
+  left: 4px;
+  background-color: rgba(51, 51, 51, .6);
+}
+.toggleBtn i {
+  font-size: 22px;
+  line-height: 44px;
+  transition: .4s linear;
+}
+.darkMode i {
+  transform: rotate(360deg);
+}
+.fa-sun {
+  color: #d4ac0d;
+}
+.fa-moon {
+  color: #eaf2f8;
+}
